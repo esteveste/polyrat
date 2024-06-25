@@ -6,7 +6,7 @@
 [![Documentation Status](https://readthedocs.org/projects/polyrat/badge/?version=latest)](https://polyrat.readthedocs.io/en/latest/?badge=latest)
 
 PolyRat is a library for polynomial and rational approximation.
-Formally we can think of [polynomials](https://en.wikipedia.org/wiki/Polynomial#Polynomial_functions) as a sum of powers of <img src="https://render.githubusercontent.com/render/math?math=x">:
+Formally we can think of [polynomials](https://en.wikipedia.org/wiki/Polynomial#Polynomial_functions) as a sum of powers of $x$:
 
 $$p(x)=\displaystyle\sum_{k=0}^m a_kx^k$$
 
@@ -16,8 +16,8 @@ $$r(x)=\displaystyle\frac{p(x)}{q(x)}=\frac{\sum_{k=0}^m a_kx^k}{\sum_{k=0}^n b_
 
 The goal of this library is to construct polynomial and rational approximations
 given a collection of point data consisting of pairs of 
-inputs <img src="https://render.githubusercontent.com/render/math?math=x_j\in \mathbb{C}^d">
-and outputs <img src="https://render.githubusercontent.com/render/math?math=y_j\in \mathbb{C}^D">
+inputs $x_j\in \mathbb{C}^d$
+and outputs $y_j\in \mathbb{C}^D$
 that minimizes (for example)
 
 $$\displaystyle\min_f \sum_{j=1}^N \|f(x_j) - y_j\|^2_2$$
