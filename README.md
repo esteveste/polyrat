@@ -8,11 +8,11 @@
 PolyRat is a library for polynomial and rational approximation.
 Formally we can think of [polynomials](https://en.wikipedia.org/wiki/Polynomial#Polynomial_functions) as a sum of powers of <img src="https://render.githubusercontent.com/render/math?math=x">:
 
-<img src="https://render.githubusercontent.com/render/math?math=p(x)=\displaystyle\sum_{k=0}^m a_kx^k.">
+$$p(x)=\displaystyle\sum_{k=0}^m a_kx^k$$
 
 A [rational function](https://en.wikipedia.org/wiki/Rational_function) is a ratio of two polynomial functions
 
-<img src="https://render.githubusercontent.com/render/math?math=r(x)=\displaystyle\frac{p(x)}{q(x)}=\frac{\sum_{k=0}^m a_kx^k}{\sum_{k=0}^n b_k x^k}.">
+$$r(x)=\displaystyle\frac{p(x)}{q(x)}=\frac{\sum_{k=0}^m a_kx^k}{\sum_{k=0}^n b_k x^k}$$
 
 The goal of this library is to construct polynomial and rational approximations
 given a collection of point data consisting of pairs of 
@@ -20,7 +20,7 @@ inputs <img src="https://render.githubusercontent.com/render/math?math=x_j\in \m
 and outputs <img src="https://render.githubusercontent.com/render/math?math=y_j\in \mathbb{C}^D">
 that minimizes (for example)
 
-<img src="https://render.githubusercontent.com/render/math?math=\displaystyle\min_f \sum_{j=1}^N \|f(x_j) - y_j\|^2_2.">
+$$\displaystyle\min_f \sum_{j=1}^N \|f(x_j) - y_j\|^2_2$$
 
 The ultimate goal of this library is to provide algorithms to construct these approximations
 in a variety of norms with a variety of constraints on the approximants.
@@ -51,8 +51,9 @@ including:
 
 ## Installation
 
-    > pip install --upgrade polyrat
+    > pip install --upgrade git+https://github.com/jeffrey-hokanson/polyrat
 
+Use github version instead of pip
 
 ## Documentation
 
